@@ -1,0 +1,220 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #222;
+  background: #fff;
+  padding: 2rem 1rem;
+  letter-spacing: 0.02em;
+  text-align: justify; /* Justificar texto */
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify; /* Justificar também dentro da container */
+}
+
+/* Cabeçalho simples, elegante */
+.site-header {
+  text-align: center; /* Cabeçalho fica centralizado */
+  margin-bottom: 4rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1.5rem;
+}
+
+.site-header h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: -0.03em;
+  color: #111;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: #555;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Menu de navegação minimalista, horizontal e elegante */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+  flex-wrap: wrap; /* Para quebrar em telas pequenas */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* Seções */
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  color: #111;
+  letter-spacing: 0.02em;
+  text-align: center; /* Títulos centralizados */
+}
+
+/* Artigos e subtítulos com espaçamento editorial */
+article h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #222;
+  border-left: 4px solid #ccc;
+  padding-left: 0.75rem;
+  text-align: left; /* Mantém os subtítulos alinhados à esquerda */
+}
+
+article h4 {
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Listas mais limpas e legíveis */
+ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+  color: #444;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify; /* Justificar texto das listas */
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.map-frame {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Rodapé discreto e clean */
+.site-footer {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  margin-top: 6rem;
+  letter-spacing: 0.05em;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 1.5rem 1rem;
+  }
+
+  .site-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    gap: 1.2rem;
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  article h3 {
+    font-size: 1.25rem;
+  }
+
+  article h4 {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.95rem;
+  }
+}
